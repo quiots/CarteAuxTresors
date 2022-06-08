@@ -38,16 +38,16 @@ Ainsi, mieux vaut lancer le programme avec le "Main" depuis votre IDE et en ajou
 -------------------------------------------
 <b>Structure</b>
 
-<b>Main</b> : Fonction d'exécution du programme
+<b>Main.java</b> : Fonction main de l'application.
     
 <b>model</b> : Modèles des objets créés lors de l'exécution du programme
     
 <b>exception</b> : Contient diverses exceptions pouvant être relevées lors de l'initialisation de nos objets et l'exécution de notre programme
     
-<b>resources</b> : Contient le dossier de nos fichiers d'instructions de chasses aux trésors, ainsi qu'un dossier recevant les résultats
-après une chasse aux trésors.
+<b>resources</b> : Contient le dossier de nos fichiers d'instructions de chasses aux trésors ("/hunts"), ainsi qu'un dossier recevant les résultats
+après une chasse aux trésors ("results").
     
-<b>service</b> : Contient les fonctions permettant dédiées au fonctionnement et au cycle de vie des objets de la chasse aux trésors
+<b>service</b> : Contient les fonctions dédiées au fonctionnement et au cycle de vie des objets de la chasse aux trésors
     
 <b>util</b> : Contient des classes utilitaires permettant notamment le traitement de nos fichiers ou de certaines données.
 
