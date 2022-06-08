@@ -20,8 +20,10 @@ Ce résultat est écrit dans un fichier de résultat au sein du dossier "ressour
 Le projet peut être cloné dans un IDE et être exécuté via le "Main".
 Un message d'introduction s'affiche dans la console afin d'accompagner l'utilisateur à la saisie
 du nom de fichier de chasse aux trésors souhaité.
+
 Suite à cela, le fichier est lu et interprété afin de générer une partie de chasse aux trésors.
 Le résultat est affiché dans la console, mais aussi inscrit dans un fichier texte dans le répertoire "resources/results".
+
 Des exceptions peuvent être relevées au cours de l'exécution, pouvant faire part d'un fichier d'instructions non valide,
 d'une génération de map erronée, d'un placement d'élément invalide ou hors map, etc.
 
@@ -29,17 +31,25 @@ L'ajout de "chasse aux trésors" autrement dit de fichier d'instructions se fait
 
 Le projet pourrait aussi être build si besoin via maven : "mvn clean install". 
 Il ne resterait alors plus qu'à exécuter le fichier JAR généré dans le dossier <i>Target</i> du projet : java -jar <nom-du-jar>
+
 Cependant par manque de temps, je n'ai pas pu fignoler la partie saisie d'utilisateur pour rendre la saisie de fichiers ergonomique.
 Ainsi, mieux vaut lancer le programme avec le "Main" depuis votre IDE et en ajoutant les fichiers à tester dans le dossier "resources/hunts", car celle-ci est adaptée pour ce dossier.
+
 -------------------------------------------
 <b>Structure</b>
 
+<b>Main</b> : Fonction d'exécution du programme
+    
 <b>model</b> : Modèles des objets créés lors de l'exécution du programme
+    
 <b>exception</b> : Contient diverses exceptions pouvant être relevées lors de l'initialisation de nos objets et l'exécution de notre programme
+    
 <b>resources</b> : Contient le dossier de nos fichiers d'instructions de chasses aux trésors, ainsi qu'un dossier recevant les résultats
 après une chasse aux trésors.
+    
 <b>service</b> : Contient les fonctions permettant dédiées au fonctionnement et au cycle de vie des objets de la chasse aux trésors
-<b>util</> : Contient des classes utilitaires permettant notamment le traitement de nos fichiers ou de certaines données.
+    
+<b>util</b> : Contient des classes utilitaires permettant notamment le traitement de nos fichiers ou de certaines données.
 
 -------------------------------------------
 <u>Pourraient être ajoutés ou améliorés :</u>
